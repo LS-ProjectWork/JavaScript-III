@@ -53,9 +53,9 @@ function Humanoid(grandchildattrs) {
   CharacterStats.call(this, grandchildattrs);
   this.team = grandchildattrs.team,
   this.weapons = grandchildattrs.weapons,
-  this.langauge = grandchildattrs.language,
+  this.language = grandchildattrs.language,
   this.greet = function() {
-    return `${this.name} offers a greeting in ${this.language}`;
+    return `${this.name} offers a greeting in ${this.language}.`;
   }
 } 
 

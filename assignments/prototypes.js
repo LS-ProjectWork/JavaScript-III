@@ -139,6 +139,39 @@ Villain.prototype = Object.create(Humanoid.prototype);
     language: 'Elvish',
   });
 
+  const savior = new Hero({
+    createdAt: new Date(),
+    dimensions: {
+      length: 3,
+      width: 4,
+      height: 3,
+    },
+    healthPoints: 20,
+    name: 'Dazer',
+    team: 'Loneman',
+    weapons: [
+      'Sword',
+      'Bow'
+    ],
+    language: 'Dankar'
+  });
+
+  const destroyer = new Villain({
+    createdAt: new Date(),
+    dimensions: {
+      length: 5,
+      width: 7,
+      height: 7,
+    },
+    healthPoints: 30,
+    name: 'Meldrin',
+    team: 'Takari Village',
+    weapons: [
+      'Barbed Club'
+    ],
+    language: 'Gratine'
+  });
+
   console.log(mage.createdAt); // Today's date
   console.log(archer.dimensions); // { length: 1, width: 2, height: 4 }
   console.log(swordsman.healthPoints); // 15

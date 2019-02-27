@@ -2,7 +2,7 @@
 * in your own words. explain the four principle for the "this" keyword below.
 *
 * 1. When a function is in the global scope, the 'this' keyword will point to the window.
-* 2. 
+* 2. When the "this" keyword is used inside an object, it points to that object.
 * 3. 
 * 4. 
 *

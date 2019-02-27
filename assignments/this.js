@@ -14,6 +14,12 @@ to an object that is explicitly stated.
 // Principle 1
 
 // code example for Window Binding
+function introduce(name) {
+    console.log(this);
+    return `Hello, my name is ${name}`
+}
+
+introduce('John');
 
 // Principle 2
 

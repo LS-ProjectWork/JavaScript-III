@@ -50,3 +50,13 @@ console.log(jessica.age());
 // Principle 4
 
 // code example for Explicit Binding
+const jordan = {
+    age: 23
+}
+
+function howOldAreYou(){
+    debugger;
+    return `I am ${this.age} years old.`
+}
+
+console.log(howOldAreYou.call(jordan))

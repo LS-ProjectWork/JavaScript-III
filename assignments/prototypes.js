@@ -61,10 +61,25 @@ function Humanoid(grandchildAttrs) {
 
 Humanoid.prototype = Object.create(CharacterStats.prototype);
 
-
+// Hero constructor function
 function Hero(greatGrndAttrs) {
-  Humanoid.call(this, greatGrndAttrs)
+  Humanoid.call(this, greatGrndAttrs);
+  this.power = function(enemy) {
+    return this.healthPoints.call(enemy) - 7;
+  }
 }
+
+Hero.prototype = Object.create(Humanoid.prototype);
+
+//Villain constructor function
+function Villain(cousinGrndAttrs) {
+  Humanoid.call(this, cousinGrndAttrs);
+  this.strength = function(enemy) {
+    return this.healthPoints.call(enemy) - 3;
+  }
+}
+
+Villain.prototype = Object.create(Humanoid.prototype);
 /*
   * Inheritance chain: GameObject -> CharacterStats -> Humanoid
   * Instances of Humanoid should have all of the same properties as CharacterStats and GameObject.

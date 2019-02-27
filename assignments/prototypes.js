@@ -15,7 +15,6 @@
   * dimensions (These represent the character's size in the video game)
   * destroy() // prototype method that returns: `${this.name} was removed from the game.`
 */
-
 function GameObject(attrs) {
   this.createdAt = attrs.createdAt,
   this.dimensions = attrs.dimensions,
@@ -31,7 +30,15 @@ function GameObject(attrs) {
   * takeDamage() // prototype method -> returns the string '<object name> took damage.'
   * should inherit destroy() from GameObject's prototype
 */
+function CharacterStats(childattrs) {
+  GameObject.call(this, childattrs);
+  this.healthpoints = childattrs.healthpoints,
+  this.takeDamage = function() {
+    return '<object name> took damage';
+  }
+}
 
+CharacterStats.prototype = Object.create(GameObject.prototype);
 
 /*
   === Humanoid (Having an appearance or character resembling that of a human.) ===

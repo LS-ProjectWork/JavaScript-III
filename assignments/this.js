@@ -24,7 +24,16 @@ introduce('John');
 // Principle 2
 
 // code example for Implicit Binding
-
+const guard = {
+    commander: 'King George IV',
+    weapon: 'sword',
+    orders: function() {
+      return `Here are the new orders from ${this.commander}: 'Prepare my ${this.weapon}.'`
+    }
+  }
+  
+  console.log(guard.orders())
+  
 // Principle 3
 
 // code example for New Binding

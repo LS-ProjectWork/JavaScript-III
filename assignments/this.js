@@ -33,10 +33,19 @@ const guard = {
   }
   
   console.log(guard.orders())
-  
+
 // Principle 3
 
 // code example for New Binding
+function Birthday(date){
+    this.date = date;
+    this.age = function() {
+        return `My birthday is ${this.date}`;
+    }
+}
+
+const jessica = new Birthday('May 23rd');
+console.log(jessica.age());
 
 // Principle 4
 

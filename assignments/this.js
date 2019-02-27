@@ -1,7 +1,7 @@
 /* The for principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
-* 1. 
+* 1. When a function is in the global scope, the 'this' keyword will point to the window.
 * 2. 
 * 3. 
 * 4. 

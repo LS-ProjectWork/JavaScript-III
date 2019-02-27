@@ -5,7 +5,8 @@
 * 2. When the "this" keyword is used inside an object, it points to that object.
 * 3. When the "this" keyword is used on a constructor function, it is referring to the object that will be created
 and is returned by the constructor function.
-* 4. 
+* 4. Whenever the "call" or "apply" methods are used on a constructor function, the "this" keyword refers 
+to an object that is explicitly stated.
 *
 * write out a code example of each explanation above
 */
